@@ -1,0 +1,136 @@
+.tab-group{
+  display: flex;
+  justify-content: center;
+}
+
+#modal {
+  background-color: #F00;
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+  list-style: none;
+  border:solid 1px white;
+  color: white;
+}
+
+.tab{
+  flex-grow: 1; 
+  padding:5px;
+  list-style:none;
+  border:solid 1px #CCC;
+  text-align:center;
+  cursor:pointer;
+  background-color: rgba(34, 49, 52, 0.9);
+  color: white;
+}
+
+.panel-group{
+  height:300px;
+  border:solid 1px #CCC;
+  border-top:none;
+  background:#eee;
+}
+
+.panel{
+  display:none;
+}
+
+.tab.is-active{
+  background:#F00;
+  color:#FFF;
+  transition: all 0.2s ease-out;
+}
+
+.panel.is-show{
+  display:block;
+}
+
+/*モーダル*/
+.signup-modal-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  display: none;
+}
+
+
+.modal {
+  position: absolute;
+  top: 20%;
+  left: 34%;
+  background-color: #e6ecf0;
+  padding: 20px 0 40px;
+  border-radius: 10px;
+  width: 450px;
+  height: auto;
+  text-align: center;
+}
+
+.fa-times {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: rgba(128, 128, 128, 0.46);
+  cursor: pointer;
+}
+
+#signup-form {
+  width: 100%;
+}
+
+#signup-form h2 {
+  color: #5f5d60;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+
+#signup-form input {
+  width: 320px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  padding: 12px 12px;
+  border: 1px solid #d0d5d8;
+  border-radius: 5px;
+}
+
+#submit-btn {
+  display: inline-block;
+  padding: 14px 140px;
+  background-color: #5dca88;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+#close-modal {
+  text-align: right;
+  cursor: pointer;
+}
+
+.accordion ul{
+  list-style:none;
+}
+
+.accordion1 {text-align: center;}
+.accordion1 .inner {display: none;}
+.accordion1 p{cursor: pointer; padding: 10px;}
+.accordion1 p.ac1{background: #F50057;}
+.accordion1 p.ac2{background: #FFEA00;}
+.accordion1 p.ac3{background: #64DD17;}
+.accordion1 .inner li{padding: 10px 0;}
+.accordion1 .inner li.content1-1{background: #F48FB1;}
+.accordion1 .inner li.content1-2{background: #F8BBD0;}
+.accordion1 .inner li.content1-3{background: #FCE4EC;}
+.accordion1 .inner li.content2-1{background: #FFF59D;}
+.accordion1 .inner li.content2-2{background: #FFF9C4;}
+.accordion1 .inner li.content2-3{background: #FFFDE7;}
+.accordion1 .inner li.content3-1{background: #C5E1A5;}
+.accordion1 .inner li.content3-2{background: #DCEDC8;}
+.accordion1 .inner li.content3-3{background: #F1F8E9;}
+

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+  <title>Tab Menu</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<header>
+  <h1>Tab Menu</h1>
+</header>
+<body>
+    <div class="tab-panel">
+        <!--タブ-->
+        <ul class="tab-group">
+          <li class="tab tab-A is-active">Tab-A</li>
+          <li class="tab tab-B">Tab-B</li>
+          <li class="tab tab-C">Tab-C</li>
+          <li class="tab tab-D">Tab-D</li>
+          <li class="tab tab-E">Tab-E</li>
+        </ul>
+        
+        <!--タブを切り替えて表示するコンテンツ-->
+          <div class="panel-group">
+          <div class="panel tab-A is-show">
+            <p>Content-A</p>
+            <div id="modal" class="signup-show">
+              <p>modal</p>
+            </div>
+            <div class="accordion">
+                <ul class="accordion1">
+                  <li>
+                      <p class="ac1">アコーディオン１</p>
+                      <ul class="inner">
+                          <li class="content1-1">コンテンツ１</li>
+                          <li class="content1-2">コンテンツ２</li>
+                          <li class="content1-3">コンテンツ３</li>
+                      </ul>
+                  </li>
+                  <li>
+                      <p class="ac2">アコーディオン２</p>
+                      <ul class="inner">
+                          <li class="content2-1">コンテンツ１</li>
+                          <li class="content2-2">コンテンツ２</li>
+                          <li class="content2-3">コンテンツ３</li>
+                      </ul>
+                  </li>
+                  <li>
+                      <p class="ac3">アコーディオン３</p>
+                      <ul class="inner">
+                          <li class="content3-1">コンテンツ１</li>
+                          <li class="content3-2">コンテンツ２</li>
+                          <li class="content3-3">コンテンツ３</li>
+                      </ul>
+                  </li>
+              </ul>
+              </div>
+          </div>
+          <div class="panel tab-B">Content-B</div>
+          <div class="panel tab-C">Content-C</div>
+          <div class="panel tab-D">Content-D</div>
+          <div class="panel tab-E">Content-E</div>
+        </div>
+      </div>
+
+        <!-- モーダル部分 -->
+  <div class="signup-modal-wrapper" id="signup-modal">
+      <div class="modal">
+        <div id="close-modal">
+          ☓
+          <!-- <i class="fa fa-2x fa-times"></i> -->
+        </div>
+        <div id="signup-form">
+          <h2>Emailで新規登録</h2>
+          <form action="#">
+            <input class="form-control" type="text" placeholder="メールアドレス">
+            <input class="form-control" type="password" placeholder="パスワード">
+            <div id="submit-btn">新規登録</div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- モーダルここまで -->
+    
+
+  
+
+
+
+
+      <script src="js/main.js"></script>
+</body>
+</html>
