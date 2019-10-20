@@ -1,3 +1,7 @@
+header h1 {
+  margin-left: 40px;
+}
+
 .tab-group{
   display: flex;
   justify-content: center;
@@ -11,6 +15,8 @@
   list-style: none;
   border:solid 1px white;
   color: white;
+  margin-left: 40px;
+  border-radius: 10px;
 }
 
 .tab{
@@ -56,7 +62,6 @@
   z-index: 100;
   display: none;
 }
-
 
 .modal {
   position: absolute;
@@ -115,6 +120,8 @@
 
 .accordion ul{
   list-style:none;
+  width: 500px;
+  height: 200px;
 }
 
 .accordion1 {text-align: center;}
