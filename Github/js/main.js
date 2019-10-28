@@ -99,6 +99,7 @@
   // スライダー終了
 }
 
+// タブ開始
 $(function () {
   /*初期表示*/
   $('.panel').hide();
@@ -116,6 +117,32 @@ $(function () {
   });
 });
 
+"use strict"
+
+
+
+// タブ終了
+
+// ドロワー開始
+$(function () {
+  /*初期表示*/
+  $('.panel').hide();
+  $('.panel').eq(0).show();
+  $('.index').eq(0).addClass('is-active');
+  /*クリックイベント*/
+  $('.index').each(function () {
+    $(this).on('click', function () {
+      const index = $('.index').index(this);
+      $('.index').removeClass('is-active');
+      $(this).addClass('is-active');
+      $('.panel').hide();
+      $('.panel').eq(index).show();
+    });
+  });
+});
+// ドロワー終了
+
+// モーダル開始
 $(function() {
   $('.signup-show').click(function() {
     $('#signup-modal').fadeIn();
@@ -124,6 +151,8 @@ $(function() {
     $('#signup-modal').fadeOut();
   });
 });
+// モーダル終了
+
 
 $(function(){
   //.accordion1の中のp要素がクリックされたら
@@ -137,12 +166,12 @@ $(function(){
 $('.menu-trigger').on('click',function(){
   if($(this).hasClass('active')){
     $(this).removeClass('active');
-    $('main').removeClass('open');
+    $('main1').removeClass('open');
     $('.menu').removeClass('open');
     $('.overlay').removeClass('open');
   } else {
     $(this).addClass('active');
-    $('main').addClass('open');
+    $('main1').addClass('open');
     $('.menu').addClass('open');
     $('.overlay').addClass('open');
   }
@@ -152,7 +181,7 @@ $('.overlay').on('click',function(){
   if($(this).hasClass('open')){
     $(this).removeClass('open');
     $('.menu-trigger').removeClass('active');
-    $('main').removeClass('open');
+    $('main1').removeClass('open');
     $('.menu').removeClass('open');      
   }
 });
